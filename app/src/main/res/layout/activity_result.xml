@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Result">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="Summary"
+        android:fontFamily="@font/quicksandbold"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#c6c6c6"
+        />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:text="Congratulations, Uzair!"
+        android:fontFamily="@font/quicksandbold"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="#c6c6c6"
+        android:background="@drawable/layout_bg"
+        />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:text="Accuracy"
+        android:fontFamily="@font/quicksandbold"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:radius="10dp"
+        android:textSize="17sp"
+        android:textColor="#c6c6c6"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="120dp"
+        />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:cpb_background_progressbar_color="#eb0a42"
+        app:cpb_background_progressbar_width="10dp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progressbar_color="#00c984"
+        app:cpb_progressbar_width="10dp"
+        app:cpb_progress_max="5"
+        app:cpb_round_border="false"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/circle"
+        tools:progress="60"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="0dp"
+        />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:text="100%"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor= "@color/white"
+        android:layout_marginTop="-155dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="25dp"
+        />
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="80dp"
+        android:text="Performance Stats"
+        android:fontFamily="@font/quicksandbold"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:textSize="17sp"
+        android:textColor="#c6c6c6"
+        android:layout_marginTop="100dp"
+        />
+
+        <TextView
+            android:id="@+id/correctCount"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:fontFamily="@font/quicksandbold"
+            android:layout_marginTop="-20dp"
+            android:layout_marginEnd="95dp"
+            android:gravity="center"
+            android:text="Correct"
+            android:textStyle="normal"
+            android:radius="10dp"
+            android:textColor="#c6c6c6"
+            android:background="@drawable/layout_bg"
+            android:textSize="20sp" />
+    <TextView
+        android:id="@+id/wrongCount"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:fontFamily="@font/quicksandbold"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="-85dp"
+        android:gravity="center"
+        android:text="Incorrect"
+        android:textStyle="normal"
+        android:radius="10dp"
+        android:textColor="#c6c6c6"
+        android:background="@drawable/layout_bg"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/unattemptedCount"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:fontFamily="@font/quicksandbold"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="95dp"
+        android:gravity="center"
+        android:text="Unattempted"
+        android:textStyle="normal"
+        android:radius="10dp"
+        android:textColor="#c6c6c6"
+        android:background="@drawable/layout_bg"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/streakCount"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:fontFamily="@font/quicksandbold"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="-85dp"
+        android:gravity="center"
+        android:text="Streak"
+        android:textStyle="normal"
+        android:radius="10dp"
+        android:textColor="#c6c6c6"
+        android:background="@drawable/layout_bg"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/play_again"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#ffffff"
+        android:textColor="#4a4a4a"
+        android:fontFamily="@font/quicksandbold"
+        android:gravity="center"
+        android:text="Play again"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        >
+
+    </Button>
+
+
+
+
+    </LinearLayout>
