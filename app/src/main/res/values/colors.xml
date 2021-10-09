@@ -12,6 +12,9 @@
     <color name="orange">#eba72c</color>
     <color name="pink">#d3546a</color>
     <color name="gray">#141414</color>
+    <color name="gray1">#babbbb</color>
+    <color name="purple">#8753bf</color>
+    <color name="black1">#141517</color>
 
 
 </resources>

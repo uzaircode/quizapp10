@@ -8,14 +8,15 @@
         android:roundIcon="@mipmap/ic_launcer_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizApp">
-        <activity android:name=".SplashActivity"></activity>
+        <activity android:name=".register_activity"></activity>
+        <activity android:name=".login_activity" />
         <activity
-            android:name=".categories"
+            android:name=".categories_activity"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".Result" />
-        <activity android:name=".question" />
+        <activity android:name=".summary_activity" />
+        <activity android:name=".question_activity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

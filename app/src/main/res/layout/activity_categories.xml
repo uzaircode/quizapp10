@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".categories">
+    tools:context=".categories_activity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="40dp"
         android:orientation="vertical">
@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Categories"
+            android:text="@string/categories"
             android:fontFamily="@font/quicksandbold"
             android:textSize="24sp"
             android:textColor="@color/white"
@@ -25,7 +25,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_marginTop="20dp"
             android:orientation="vertical"
             android:gravity="center"
@@ -36,7 +36,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:gravity="center">
+                android:gravity="center"
+                tools:ignore="NestedWeights">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/animals"
@@ -53,18 +54,20 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical"
                         android:gravity="center"
-                        >
+                        tools:ignore="UseCompoundDrawables">
 
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
                             android:src="@drawable/lion"
-                            android:layout_marginTop="18dp"/>
+                            android:layout_marginTop="18dp"
+                            android:contentDescription="@string/animals" />
 
                         <TextView
+                            android:id="@+id/animals1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Animals"
+                            android:text="@string/animals"
                             android:fontFamily="@font/quicksandbold"
                             android:textSize="18sp"
                             android:textColor="@color/white"
@@ -101,7 +104,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Save the Earth"
+                            android:text="@string/save_the_earth"
                             android:fontFamily="@font/quicksandbold"
                             android:textSize="18sp"
                             android:textColor="@color/white"
@@ -145,7 +148,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Space Exploration"
+                            android:text="@string/space_exploration"
                             android:fontFamily="@font/quicksandbold"
                             android:textSize="18sp"
                             android:textColor="@color/white"
@@ -182,7 +185,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Comets &amp; Meteors"
+                            android:text="@string/comets_amp_meteors"
                             android:fontFamily="@font/quicksandbold"
                             android:textSize="18sp"
                             android:textColor="@color/white"
@@ -227,7 +230,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
                             android:fontFamily="@font/quicksandbold"
-                            android:text="Nutrition"
+                            android:text="@string/nutrition"
                             android:textColor="@color/white"
                             android:textSize="18sp" />
 
@@ -262,7 +265,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Plant"
+                            android:text="@string/plants"
                             android:fontFamily="@font/quicksandbold"
                             android:textSize="18sp"
                             android:textColor="@color/white"
@@ -305,7 +308,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="History"
+                            android:text="@string/history"
                             android:fontFamily="@font/quicksandbold"
                             android:textSize="18sp"
                             android:textColor="@color/white"
@@ -344,7 +347,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
                             android:fontFamily="@font/quicksandbold"
-                            android:text="Geography"
+                            android:text="@string/geography"
                             android:textColor="@color/white"
                             android:textSize="18sp" />
                     </LinearLayout>

@@ -18,12 +18,12 @@ public class SplashActivity extends AppCompatActivity {
             public  void run()
             {
                 try {
-                    sleep(2000);
+                    sleep(5000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
 
-                Intent intent = new Intent(SplashActivity.this,MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, login_activity.class);
                 startActivity(intent);
 
             }
